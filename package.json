@@ -1,0 +1,21 @@
+{
+  "name": "web-automation-boilerplate",
+  "version": "1.0.0",
+  "description": "if you need boilerplate project to your web-automation, here it is",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/depapp/web-automation-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/depapp/web-automation-boilerplate/issues"
+  },
+  "homepage": "https://github.com/depapp/web-automation-boilerplate#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.26.1"
+  }
+}
