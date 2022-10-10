@@ -1,7 +1,7 @@
 # web-automation-boilerplate
 if you need boilerplate project to your web-automation, here it is
 
-## how to setup & running this project
+## :books: how to setup & running this project
 
 - clone this project using to your local machine
 
