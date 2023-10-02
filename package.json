@@ -16,6 +16,6 @@
   },
   "homepage": "https://github.com/depapp/web-automation-boilerplate#readme",
   "devDependencies": {
-    "@playwright/test": "^1.26.1"
+    "@playwright/test": "^1.38.1"
   }
 }
