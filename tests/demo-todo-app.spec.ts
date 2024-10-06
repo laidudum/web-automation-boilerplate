@@ -373,6 +373,26 @@ test.describe('Routing', () => {
   });
 });
 
+test.describe('Delete Todo', () => {
+  test('should allow me to delete a todo item', async ({ page }) => {
+    // Create a todo item.
+    await page.locator('.new-todo').fill('delete this item');
+    await page.locator('.new-todo').press('Enter');
+
+    // Ensure the item is added.
+    await expect(page.locator('.view label')).toHaveText(['delete this item']);
+
+    // Delete the todo item.
+    const todoItem = page.locator('.todo-list li').first();
+    await todoItem.hover();
+    await todoItem.locator('.destroy').click();
+
+    // Ensure the item is deleted.
+    await expect(page.locator('.view label')).toHaveCount(0);
+    await checkNumberOfTodosInLocalStorage(page, 0);
+  });
+});
+
 async function createDefaultTodos(page: Page) {
   for (const item of TODO_ITEMS) {
     await page.locator('.new-todo').fill(item);
